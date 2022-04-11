@@ -9,22 +9,22 @@ const NavbarComp=()=>{
             <nav className="navbar navbar-fixed-top navbar-inverse navbar-expand-lg nava">
             <div className="container">
                 <div className="row">
-                {/* <!--for putting the logo--> */}
-                {/* <div className="navbar-header">
-                    {/* <a href="." className="navbar-brand"><img src="imges/4logo.png"/></a> 
+                {/*<!--for putting the logo--> */}
+                <div className="navbar-header">
+                    <a href="." className="navbar-brand"><img src={img}/></a> 
 
-                    {/* <!--button for collapse--> *
-                    <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navi">
+                    {/* <!--button for collapse--> */}
+                    {/* <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navi">
                         <span className="icon-bar"></span>
                         <span className="icon-bar"></span>
                         <span className="icon-bar"></span>
-                    </button>
-                </div> */}
+                    </button> */}
+                </div>
 
                 {/* <!--for navbar collapsing--> */}
-                <div className="nava collapse navbar-collapse" id="navi">
+                <div className="nava collapse navbar-collapse justify-content-end" id="navi">
                     {/* <!--navigation menus--> */}
-                    <ul className="nav navbar-nav navbar-right ml-auto">
+                    <ul className="nav navbar-nav navbar-right justify-content-end">
                         <li><a href="">Home</a></li>
                         <li><a href="">About Us</a></li>
                         <li><a href="">Shedule</a></li>
