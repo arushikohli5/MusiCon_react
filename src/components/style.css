@@ -216,7 +216,7 @@ body{
 .categories .confetti1 img{
     height: auto!important;
     max-width: 30%!important;
-    margin-left: 30px;
+    margin-left: -50%;
     margin-top: 2%;
     position: relative;
     margin-bottom: -45px;
