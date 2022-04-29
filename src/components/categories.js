@@ -16,6 +16,62 @@ import "slick-carousel/slick/slick-theme.css";
 //const CategoryComp=()=>{ 
 class CategoryComp extends React.Component {
     render(){
+        $(document).ready(function() {
+        $('.item-a').click(function(){
+            $('.item-a .box').addClass("secon");
+            $('.item-b .box').removeClass("secon");
+            $('.item-c .box').removeClass("secon");
+            $('.item-d .box').removeClass("secon");
+            $('.item-e .box').removeClass("secon");
+            $('.item-f .box').removeClass("secon");
+        });
+
+        $('.item-b').click(function(){
+            $('.item-b .box').addClass("secon");
+            $('.item-a .box').removeClass("secon");
+            $('.item-c .box').removeClass("secon");
+            $('.item-d .box').removeClass("secon");
+            $('.item-e .box').removeClass("secon");
+            $('.item-f .box').removeClass("secon");
+        });
+        
+        $('.item-c').click(function(){
+            $('.item-c .box').addClass("secon");
+            $('.item-a .box').removeClass("secon");
+            $('.item-b .box').removeClass("secon");
+            $('.item-d .box').removeClass("secon");
+            $('.item-e .box').removeClass("secon");
+            $('.item-f .box').removeClass("secon");
+        });
+          
+        $('.item-d').click(function(){
+            $('.item-d .box').addClass("secon");
+            $('.item-a .box').removeClass("secon");
+            $('.item-c .box').removeClass("secon");
+            $('.item-b .box').removeClass("secon");
+            $('.item-e .box').removeClass("secon");
+            $('.item-f .box').removeClass("secon");
+        });
+    
+        $('.item-e').click(function(){
+            $('.item-e .box').addClass("secon");
+            $('.item-a .box').removeClass("secon");
+            $('.item-c .box').removeClass("secon");
+            $('.item-d .box').removeClass("secon");
+            $('.item-b .box').removeClass("secon");
+            $('.item-f .box').removeClass("secon");
+        });
+        
+        $('.item-f').click(function(){
+            $('.item-f .box').addClass("secon");
+            $('.item-a .box').removeClass("secon");
+            $('.item-c .box').removeClass("secon");
+            $('.item-d .box').removeClass("secon");
+            $('.item-b .box').removeClass("secon");
+            $('.item-e .box').removeClass("secon");
+        });
+        })
+  
     var settings = {
         dots: true,
         infinite: true,

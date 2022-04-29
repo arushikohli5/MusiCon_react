@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import './components/loder'
 import Navbar from './components/Navbar';
 import Home from './components/home'
 import Category from './components/categories'
