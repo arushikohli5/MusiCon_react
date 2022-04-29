@@ -14,11 +14,14 @@ body{
 .navbar{
     /**top,left,bottom,right**/
     padding: 15px 0px;
-    background-color: #000000;
+    /* background-color: #000000; */
     /* background-color: #34495e !important;  */
-    /* background-color: transparent !important; */
+    background-color: transparent !important;
     border-bottom: none !important;
     height: 80px;
+    z-index: 9999;
+    position: fixed !important;
+    width: 100%;
 }
 
 .navbar .container{
@@ -107,6 +110,12 @@ body{
     color: #FFA3A3;
 }
 
+/*======================
+    coloured navbar
+========================*/
+.secondary{
+    background-color: black !important;
+}
 
 
 /*======================

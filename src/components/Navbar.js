@@ -2,8 +2,21 @@ import React from 'react';
 import "./style.css";
 import img from "./imges/4logo.png";
 import 'bootstrap/dist/css/bootstrap.min.css'
+import $ from "jquery";
+
 
 const NavbarComp=()=>{
+    $(window).scroll(function(){
+        "use strict"
+        var top=$(window).scrollTop();
+        if(top>=80){
+            $(".nava").addClass("secondary");
+        }
+        else
+            if($(".nava").hasClass("secondary")){
+                $(".nava").removeClass("secondary");
+            }
+    });
     return(
             <div>
             <nav className="navbar navbar-fixed-top navbar-inverse navbar-expand-lg nava">
