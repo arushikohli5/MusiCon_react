@@ -25,17 +25,14 @@ const NavbarComp=()=>{
                 {/*<!--for putting the logo--> */}
                 <div className="navbar-header">
                     <a href="." className="navbar-brand"><img src={img}/></a> 
-
-                    {/* <!--button for collapse--> */}
-                    {/* <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navi">
-                        <span className="icon-bar"></span>
-                        <span className="icon-bar"></span>
-                        <span className="icon-bar"></span>
-                    </button> */}
+                    {/*<!--button for collapse--> */}
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                 </div>
 
                 {/* <!--for navbar collapsing--> */}
-                <div className="nava collapse navbar-collapse justify-content-end" id="navi">
+                <div className="nava collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
                     {/* <!--navigation menus--> */}
                     <ul className="nav navbar-nav navbar-right justify-content-end">
                         <li><a href="">Home</a></li>
