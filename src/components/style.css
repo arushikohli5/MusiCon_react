@@ -404,3 +404,54 @@ div .about-us-text{
     margin-top: -20px;
 }
 
+
+/*======================
+    organisers styles
+========================*/
+.organisers{
+    margin-top: 10px;
+}
+
+
+@media (min-width: 768px){
+    .organisers-text{
+        margin-top: 75px;
+        font-family: Montserrat;
+        float: right;
+        margin-left: 95px;
+    }
+}
+
+@media (max-width: 768px){
+    .organisers-text{
+        margin-top: 75px;
+        font-family: Montserrat;
+        float: right;
+        margin-left: 25px;
+    }
+}
+
+.organisers-image img{
+    height: auto;
+    max-width: 95%;
+}
+
+
+.organisers-button .btn{
+    margin-top: 30px;
+    background-color: rgba(56, 29, 219, 1);
+    color: white;
+    font-family: Montserrat;
+    font-size: 20px;
+}
+
+.organisers-button .btn:hover{
+    color: white;
+    background-color: black;
+}
+
+.confetti4 img{
+    float: right;
+    margin-top: -50px;
+    margin-left: -2px;
+}

@@ -4,9 +4,9 @@ import Navbar from './components/Navbar';
 import Home from './components/home'
 import Category from './components/categories'
 import AboutUs from './components/aboutUs'
+import Organisers from './components/organisers' 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import CategoryComp from './components/categories';
 
 function App() {
   return (
@@ -15,6 +15,7 @@ function App() {
       <Home/>
       <Category/>
       <AboutUs/>
+      <Organisers/>
     </div>
   );
 }
