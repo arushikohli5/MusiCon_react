@@ -35,6 +35,10 @@ body{
     margin-top: 15px;
 }
 
+.navbar ul{
+    margin-right: -50px;
+}
+
 .navbar ul li a{
     font-family: Montserrat;
     color: white !important;
@@ -138,7 +142,7 @@ body{
 
 .slider-content{
     position: absolute;
-    top: 30%;
+    margin-top: 22%;
     width: 100%;
 }
 
@@ -455,3 +459,119 @@ div .about-us-text{
     margin-top: -50px;
     margin-left: -2px;
 }
+
+
+/*================
+    contact us
+================*/
+.cont1{
+    background-color: #381DDB;
+    color: white;
+    font-family: Montserrat;
+    text-align: left;
+    
+}
+.contact-us .row{
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-top: 22px;
+}
+
+.cont1 .contact-details .text{
+    padding-left: 12px;
+}
+.text-heading{
+    font-size: 25px;
+    font-weight: 900;
+    padding-top: 100px;
+    padding-bottom: 15px;
+    padding-left: 75px;
+}
+.line{
+    padding-bottom: 40px;
+    padding-left: 75px;
+}
+
+.contact-details{
+    padding-left: 75px;
+}
+.fa-phone, .fa-envelope{
+    padding-bottom: 30px;
+}
+
+.contact-us-image{
+    float: right;
+    margin-bottom: 0px;
+    margin-right: -15px;
+    margin-top: 50px;
+}
+
+
+/*==form styling==*/
+.cont2{
+    background-color: #E5E5E5;
+} 
+
+
+.cont2-heading p{
+    font-family: 'Montserrat Bold', arial;
+    font-size: 22px;
+    color: #000000;
+    font-weight: 900;
+    padding-top: 90px;
+    margin-bottom: 20px;
+}
+
+.cont2 button{
+    position: relative;
+    background-color: #381DDB;
+    color: white;
+    margin-top: 20px;
+    margin-bottom:33.5px ;
+    align-items: center !important;
+    align-self: center!important;
+    align-content: center;
+    width: 60%;
+}
+
+.form button:hover{
+    color: white;
+    background-color: black;
+}
+
+
+input,
+label, .form_input {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    font-family: Raleway !important;
+}
+
+input, .form_input{
+    font-size: 1.25em;
+    padding: 5px 5px 5px 5px;
+    z-index: 10;
+    background: transparent;
+    margin-bottom: 0.5em;
+    border: none;
+    border-bottom: 2px solid #3333;
+    margin-left: 25px !important;
+}
+
+label {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0 0 5px 0;
+    transition: all 0.5s ease-in-out; 
+    z-index: 1;
+    top: 36px;
+    text-align: left;
+    margin-left: 25px;
+}
+
+.filled label {
+	top: 10px;
+	font-size: 1.1em;
+    bottom: 5px;
+} 
