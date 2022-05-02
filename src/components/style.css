@@ -142,7 +142,7 @@ body{
 
 .slider-content{
     position: absolute;
-    margin-top: 22%;
+    margin-top: 18%;
     width: 100%;
 }
 
@@ -184,6 +184,11 @@ body{
     font-weight: bold;
 }
 
+.cta-div .fa-solid{
+    font-size: 25px;
+    vertical-align: middle;
+    padding-left: 8px;
+}
 .cta-div .btn2:hover{
     color: burlywood;
     text-decoration: none;
@@ -575,3 +580,62 @@ label {
 	font-size: 1.1em;
     bottom: 5px;
 } 
+
+
+/* ===============
+    footer
+================*/ 
+
+.footer{
+    background-color: #000000;
+}
+
+.btn-social-icon{
+    margin-top: 25px;
+    padding: 5px;
+    color: white !important;
+}
+
+.btn-social-icon i:hover{
+    color: #FC5252;
+}
+
+.btn-social-icon:hover{
+    color: #FC5252;
+}
+.footer-txt ul{
+    position: relative;
+    padding-top: 5px;
+}
+
+.footer-txt ul>li{
+    position: relative;
+    display: inline;
+    align-content: center;
+    padding: 12px;
+    padding-top: 10px;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.footer-txt ul li a{
+    font-family: Montserrat;
+    color:  #D2D2D2 !important;
+    text-decoration: none;
+}
+
+
+.footer-mark{
+    font-size: 13px;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    padding-top: 4px;
+    margin-bottom: -15px;
+    color: #b3b3b3;
+    padding-bottom: 15px;
+}
+
+.footer .fa-envelope{
+    margin-top: 29px;
+}

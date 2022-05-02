@@ -6,6 +6,7 @@ import Category from './components/categories'
 import AboutUs from './components/aboutUs'
 import Organisers from './components/organisers' 
 import ContactUs from './components/contactUs'
+import Footer from './components/footer'
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -18,6 +19,7 @@ function App() {
       <AboutUs/>
       <Organisers/>
       <ContactUs/>
+      <Footer/>
     </div>
   );
 }

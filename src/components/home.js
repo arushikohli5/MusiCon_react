@@ -18,7 +18,7 @@ const HomeComp=()=>{
 
                     <div className="cta-div">
                         <button className="btn signup"><a href="./sign_up.html" className="btn1" target="_blank">SIGN UP</a></button>
-                        <i className="fas fa-play-circle-o" ></i>
+                        <i className="fa-solid fa-circle-play" size="lg"></i>
                         <a href="." className="btn2">WATCH VEDIO</a>
                     </div>
 
