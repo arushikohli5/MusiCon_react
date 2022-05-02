@@ -27,14 +27,14 @@ const NavbarComp=()=>{
                     <a href="." className="navbar-brand"><img src={img}/></a> 
                     {/*<!--button for collapse--> */}
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <i class="fa-solid fa-dash"></i>
                     </button>
                 </div>
 
                 {/* <!--for navbar collapsing--> */}
                 <div className="nava collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
                     {/* <!--navigation menus--> */}
-                    <ul className="nav navbar-nav navbar-right justify-content-end">
+                    <ul className="nav navbar-nav navbar-right justify-content-end navi">
                         <li><a href="">Home</a></li>
                         <li><a href="">About Us</a></li>
                         <li><a href="">Shedule</a></li>
