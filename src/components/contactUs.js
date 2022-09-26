@@ -64,7 +64,7 @@ class ContactUsComp extends React.Component{
                     </div>
                     <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 cont2">
                         <div className="cont2-heading"><p>Fill In your details</p></div>
-                        <div className="form form-group-row">
+                        <div className="cont2 form form-group-row">
                             <form>
                                 <div className="field col-xs-11 col-sm-11 col-md-11 col-lg-11">
                                     <label for="name">Name </label>

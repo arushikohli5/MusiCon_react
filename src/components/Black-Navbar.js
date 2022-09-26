@@ -27,7 +27,7 @@ const NavbarComp = () => {
     return (
         <div>
         <div>
-            <nav className="navbar navbar-fixed-top navbar-inverse navbar-expand-lg nava">
+            <nav className="navbar navbar-black navbar-fixed-top navbar-inverse navbar-expand-lg nava">
                 <div className="container">
                     <div className="row">
                         {/*<!--for putting the logo--> */}

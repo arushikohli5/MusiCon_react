@@ -23,6 +23,9 @@ body{
     position: fixed !important;
     width: 100%;
 }
+.navbar-black{
+    background-color: #000000 !important;
+}
 
 .navbar .container{
     display: inline !important;
@@ -53,7 +56,7 @@ body{
     margin-bottom: 10px;
     vertical-align: middle;
     text-align: end;
-    padding: 15px;
+    padding: 5px;
     text-decoration: none;
     align-items: flex-end;
     align-self: flex-end;
@@ -505,7 +508,7 @@ div .about-us-text{
 .contact-details{
     padding-left: 75px;
 }
-.fa-phone, .fa-envelope{
+.contact-details .fa-phone, .contact-details .fa-envelope{
     padding-bottom: 30px;
 }
 
@@ -513,7 +516,7 @@ div .about-us-text{
     float: right;
     margin-bottom: 0px;
     margin-right: -15px;
-    margin-top: 50px;
+    margin-top: 58px;
 }
 
 
@@ -550,15 +553,15 @@ div .about-us-text{
 }
 
 
-input,
-label, .form_input {
+.cont2 input,
+label,.cont2 .form_input {
     position: relative;
     display: inline-block;
     width: 100%;
     font-family: Raleway !important;
 }
 
-input, .form_input{
+.cont2 input,.cont2 .form_input{
     font-size: 1.25em;
     padding: 5px 5px 5px 5px;
     z-index: 10;
@@ -569,7 +572,7 @@ input, .form_input{
     margin-left: 25px !important;
 }
 
-label {
+.cont2 label {
     display: inline-block;
     margin: 0 auto;
     padding: 0 0 5px 0;
@@ -580,7 +583,7 @@ label {
     margin-left: 25px;
 }
 
-.filled label {
+.cont2 .filled label {
 	top: 10px;
 	font-size: 1.1em;
     bottom: 5px;
@@ -641,6 +644,140 @@ label {
     padding-bottom: 15px;
 }
 
-.footer .fa-envelope{
-    margin-top: 29px;
+
+/*================================
+    detail-contact-us styles
+==================================*/
+
+.detail-contact-us{
+    background-image: url(../components/imges/contact_us_bg.png);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;/*
+    background: linear-gradient(359.72deg, #1D3CDB -23.13%, rgba(74, 153, 211, 0) 99.79%), #FFFFFF;
+    opacity: 0.2; */
+}
+
+@media (min-width: 768px){
+    .contact-us-box{
+        width: 50%;
+        min-height: 400px;
+    }
+}
+
+@media (max-width: 768px){
+    .contact-us-box{
+        width: 80%;
+        min-height: 400px;
+    }
+}
+
+.contact-us-box{
+    position: absolute;
+    align-self: center;
+    align-content:center;
+    border-radius: 24px;
+    background-color:#FFFFFF;
+    box-shadow: 2px 10px 12px rgba(0, 0, 0, 0.5);
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-top: 65px;
+    z-index: 1;
+    padding: 10px;
+}
+
+
+.confetti6 img{
+    max-width: 70% !important;
+    z-index: 9;
+    margin-left: 172%;
+    margin-top: -206%;
+}
+
+.detail-contact-heading{
+    margin-top: 10px;
+    font-size: 21px;
+    padding-bottom: 2px;
+    font-family: Raleway;
+    font-weight: 700;
+    color: #381DDB;
+    text-decoration: underline;
+}
+
+.detail-cont1-heading{
+    font-family: Raleway;
+    font-weight: 800;
+    font-size: 18px;
+    padding-left: 32px !important;
+    margin-bottom: -25px;
+    padding-top: 20px;
+}
+
+.button-align{
+    position: relative;
+    margin: auto;
+}
+
+.detail-cont-btn{
+    width: 80%;
+    margin: auto;
+    background-color: #381DDB !important;
+    color: white!important;
+}
+
+.detail-cont-1{
+    margin-left: 32px;
+    padding-top: 5px;
+}
+
+.detail-cont-1 input{
+    border: none;
+    border-bottom: 2px solid #3333;
+}
+
+@media (min-width: 1212px){
+    .detail-cont-1 input{
+        width: 250px;
+    }
+    .detail-cont-1 textarea{
+        width: 250px;
+    }
+
+    
+}
+.detail-cont-1 textarea{
+    border: none;
+    border-bottom: 2px solid #3333;
+}
+
+.button-align button{
+    margin-top: 25px !important;
+    margin-left: auto;
+}
+
+.button-align .btn:hover{
+    background-color: #000000 !important;
+    color: white !important;
+}
+
+.detail-contact-us-box2{
+    margin-top: 20px!important;
+    font-family: Raleway;
+    padding-left: 10px;
+}
+
+.detail-contact-us-box2 i{
+    position: relative;
+    margin-top: 18px !important;
+    padding: 5px;
+}
+
+.detail-contact-us-box2 .fa-envelope {
+    margin-top: -15px !important;
+}
+
+.detail-cont-us i{
+    padding-right: 15px;
+    margin-top: 0px !important;
 }

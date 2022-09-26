@@ -1,15 +1,12 @@
 import logo from './logo.svg';
 import './components/loder'
 import Navbar from './components/Navbar';
-import Home from './components/home'
-import Category from './components/categories'
-import AboutUs from './components/aboutUs'
-import Organisers from './components/organisers'
-import ContactUs from './components/contactUs'
-import Footer from './components/footer'
+import DetailContactUComps from './components/detail_contact_us'
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route, Link, } from 'react-router-dom';
+import DetailContactUsComp from './components/detail_contact_us';
+import HomeComp from './components/home';
 
 
 function App() {
@@ -17,9 +14,9 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/contact" element={<ContactUs/>} >
+          <Route path="/contact" element={<DetailContactUsComp/>} >
           </Route>
-          <Route path="/" exact element={<Navbar/>}>
+          <Route path="/" exact element={<HomeComp/>}>
           </Route>
         </Routes>
       </Router>

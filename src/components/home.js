@@ -1,9 +1,17 @@
 import React from 'react';
 import "./style.css";
+import Navbar from '../components/Navbar'
+import Category from '../components/categories'
+import AboutUs from '../components/aboutUs'
+import Organisers from '../components/organisers'
+import ContactUs from '../components/contactUs'
+import Footer from '../components/footer'
 
 
 const HomeComp=()=>{
     return(
+        <div>
+            <Navbar/>
         <section className="slider text-center" id="slider">
             <div className="slider-overlay">
                 <div className="slider-content">
@@ -28,5 +36,11 @@ const HomeComp=()=>{
                 </div>
             </div>
         </section>
+        <AboutUs/>
+        <Category/>
+        <Organisers/>
+        <ContactUs/>
+        <Footer/>
+        </div>
     )}
     export default HomeComp;
