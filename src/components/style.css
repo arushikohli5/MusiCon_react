@@ -651,6 +651,7 @@ label,.cont2 .form_input {
 
 .detail-contact-us{
     background-image: url(../components/imges/contact_us_bg.png);
+    background-size: cover;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -670,6 +671,13 @@ label,.cont2 .form_input {
     .contact-us-box{
         width: 80%;
         min-height: 400px;
+        margin-top: 220px !important;
+        position: relative !important;
+    }
+
+    .detail-contact-us-footer{
+        position: relative;
+        margin-top: 150px;
     }
 }
 
@@ -780,4 +788,10 @@ label,.cont2 .form_input {
 .detail-cont-us i{
     padding-right: 15px;
     margin-top: 0px !important;
+}
+
+@media (max-width: 733px){
+    .detail-contact-us-box2{
+        padding-left: 35px !important;
+    }
 }

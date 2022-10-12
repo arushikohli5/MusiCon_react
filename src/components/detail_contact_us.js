@@ -1,8 +1,7 @@
 import React from 'react'
 import './style.css'
 import Navbar from '../components/Black-Navbar';
-import $ from "jquery";
-import d6 from "./imges/d6.png"
+import Footer from '../components/footer'
 
 class DetailContactUsComp extends React.Component{
     render(){
@@ -60,6 +59,7 @@ class DetailContactUsComp extends React.Component{
                 </div>
               </div>  
           </section>
+          <div class="detail-contact-us-footer"><Footer/></div>
         </div>
         )
     }
