@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route, Link, } from 'react-router-dom';
 import DetailContactUsComp from './components/detail_contact_us';
 import HomeComp from './components/home';
+import SignUpComp from './components/Sign_up';
 
 
 function App() {
@@ -17,6 +18,8 @@ function App() {
           <Route path="/contact" element={<DetailContactUsComp/>} >
           </Route>
           <Route path="/" exact element={<HomeComp/>}>
+          </Route>
+          <Route path="/sign_up" exact element={<SignUpComp/>}>
           </Route>
         </Routes>
       </Router>

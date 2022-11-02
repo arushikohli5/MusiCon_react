@@ -1,4 +1,3 @@
-
 *{
     margin: 0;
     padding: 0;
@@ -64,7 +63,9 @@ body{
     z-index: 9999;
 }
 
-
+.navbar ul li a .login{
+    color: #381DDB !important;
+}
 .navbar ul li a:hover{
     color: #FFA3A3 !important;
 }
@@ -103,7 +104,7 @@ body{
 .login{
     border: 1px solid white;
     background-color: white;
-    color: #381DDB;    ;
+    color: #381DDB !important;    
     align-content: center;
     align-self: center;
     align-items: center;
