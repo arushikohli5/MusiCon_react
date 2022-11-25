@@ -16,10 +16,6 @@ body{
     background-size: cover;
     background-position: center;
     height: 100vh;
-    /* display: flex;
-    align-self: center;
-    justify-self: center;
-    justify-content: center; */
 }
 
 .contact-us-box2{
@@ -39,7 +35,7 @@ body{
     font-weight: 700;
     font-size: 40px;
     position: relative;
-    margin-top: 6.5vh;
+    margin-top: 10vh;
 }
 
 .organiser-button .btn, .band-button .btn{
@@ -62,6 +58,7 @@ body{
     font-size: 25px;
     margin-top: 5vh;
     margin-bottom: 5vh;
+    font-family: "Raleway";
 }
 
 .sign_up .last{
@@ -72,4 +69,135 @@ body{
 .sign_up .link a{
     color: rgba(56, 29, 219, 0.6);
     text-decoration: none !important; 
+}
+
+/*================================
+           Sign_in styles
+==================================*/
+
+.sign_in{
+    background-image: url(../components/imges/sign_in_bg.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+@media (min-width: 768px){
+    .sign_in_box{
+        width: 50%;
+        border-bottom-left-radius: 30px;
+        border-top-left-radius: 30px;
+    }
+}
+
+@media (max-width: 768px){
+    .sign_in_box{
+        width: 100%;
+    }
+}
+.sign_in_box{
+    background-color: white;
+    /* border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px; */
+    /* width: 50%; */
+    height: 100%;
+    float: right;
+}
+
+.sign_in .heading{
+    margin-top: 15vh;
+    font-family: 'Montserrat Bold', arial;
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 25px;
+}
+
+.sign_in .btn .btn-text{
+    font-size: 12px;
+    font-family: "Raleway";
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.sign_in .button1{
+    margin-left: 11px;
+    border-color: rgba(0, 0, 0, 0.2);
+    display: inline-flex;
+}
+
+.sign_in .button2{
+    border-color: rgba(0, 0, 0, 0.2);
+    display: inline-flex;
+    margin-left: 70px;
+}
+
+.fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    padding-right: 5px;
+  }
+
+.sign_in .fa-facebook-f{
+    color: #3b5998;
+    background-image: linear-gradient( to bottom, transparent 20%, white 20%, white 93%, transparent 93% );
+    background-size: 55%;
+    background-position: 70% 0;
+    background-repeat: no-repeat;
+    padding-right: 5px;
+  }
+
+.sign_in .or{
+    color: rgba(0, 0, 0, 0.39);
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    font-family: "Raleway";
+}
+
+.sign_in .field input{
+    width: 70%;
+    border: none;
+    border-bottom: 1px solid #3333;
+    line-height: 32px;
+    margin-top: 35px;
+}
+
+.sign_in .field input::placeholder{
+    color: rgba(0, 0, 0, 0.3);
+    font-family: "Raleway";
+}
+
+.sign_in .field input :focus-visible{
+    border: none;
+}
+
+.sign_in .sign-in-btn{
+    background-color: rgba(56, 29, 219, 1);
+    color: white;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    width: 65%;
+    line-height: 21px;
+    margin-top: 7vh;
+}
+
+/*================================
+        about-us styles
+==================================*/
+.about-us1{
+    background-image: url(../components/imges/about-us-bg1.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.img1 img{
+    vertical-align: middle;
+    padding-left: 80px;
+    padding-top: 20vh;
+    max-width: 35vw;
 }

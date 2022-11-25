@@ -43,12 +43,12 @@ const NavbarComp = () => {
                         <div className="nava collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
                             {/* <!--navigation menus--> */}
                             <ul className="nav navbar-nav navbar-right justify-content-end navi">
-                                <li><a href=""><Link to="/">Home</Link></a></li>
-                                <li><a href=""><Link to="/about-us">About Us</Link></a></li>
-                                <li><a href=""><Link to="/schedule">Schedule</Link></a></li>
-                                <li><a href=""><Link to="/contact">Contact US</Link></a></li>
-                                <li><a href="" target="_blank"><span className="login">Login</span></a></li>
-                                <li><a href="./sign_up.html" target="_blank"><span className=" login">Sign Up</span></a></li>
+                            <li><a href=""><Link to="/">Home</Link></a></li>
+                                <li><a href=""><Link to="/about-us" target="_blank">About Us</Link></a></li>
+                                <li><a href=""><Link to="/schedule" target="_blank">Schedule</Link></a></li>
+                                <li><a href=""><Link to="/contact" target="_blank">Contact US</Link></a></li>
+                                <li><a href="" target="_blank"><Link to="/sign_in" target="_blank"><span className="login">Sign In</span></Link></a></li>
+                                <li><a href="" target="_blank"><Link to="/sign_up" target="_blank"><span className=" login">Sign Up</span></Link></a></li>
                             </ul>
                         </div>
 

@@ -70,11 +70,14 @@ body{
     color: #FFA3A3 !important;
 }
 
-.navbar-toggle{
+.navbar-toggler{
     border: 1px solid white !important;
     border: white;
     transition: all 0.5s ease-in;
+    float: right;
+    margin-right: -40px;
 }
+
 .navbar-header{
     align-self: start;
     align-content: flex-start;
@@ -187,6 +190,7 @@ body{
 
 .signup a{
     text-decoration: none;
+    color: white!important;
 }
 .cta-div .btn1{
     color: white;
@@ -199,7 +203,7 @@ body{
     padding-left: 8px;
 }
 .cta-div .btn2:hover{
-    color: burlywood;
+    color: #FFA3A3 !important;
     text-decoration: none;
 }
 .btn2{
@@ -606,11 +610,11 @@ label,.cont2 .form_input {
 }
 
 .btn-social-icon i:hover{
-    color: #FC5252;
+    color: #FFA3A3;
 }
 
 .btn-social-icon:hover{
-    color: #FC5252;
+    color: #FFA3A3;
 }
 .footer-txt ul{
     position: relative;

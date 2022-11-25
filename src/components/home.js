@@ -6,6 +6,8 @@ import AboutUs from '../components/aboutUs'
 import Organisers from '../components/organisers'
 import ContactUs from '../components/contactUs'
 import Footer from '../components/footer'
+import { BrowserRouter as Router, Routes, Route, Link, Redirect, Navigate,useNavigate} from 'react-router-dom';
+
 
 
 const HomeComp=()=>{
@@ -25,7 +27,7 @@ const HomeComp=()=>{
                     </div>
 
                     <div className="cta-div">
-                        <button className="btn signup"><a href="./sign_up.html" className="btn1" target="_blank">SIGN UP</a></button>
+                        <button className="btn signup"><a href="" className="btn1" target="_blank"><Link to="/sign_up" target="_blank">SIGN UP</Link></a></button>
                         <i className="fa-solid fa-circle-play" size="lg"></i>
                         <a href="." className="btn2">WATCH VEDIO</a>
                     </div>
