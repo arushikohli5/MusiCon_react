@@ -19,7 +19,13 @@ const HomeComp=()=>{
                 <div className="slider-content">
                     <div className="text">
                         <h1><span className="t1">The Best Experience Of</span>
-                            <br/><span className="t2">Music</span></h1><br/>
+                            <br/><span className="t2">
+                            <div id="flip">
+                            <div><div>Music</div></div>
+                            <div><div>Bands</div></div>
+                            <div><div>Clubs</div></div>
+                        </div>
+                            </span></h1><br/>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae 
                             ligula <br/>placerat, eleifend ex non, vehicula libero. Suspendisse eget tellus 
                             lectus.
