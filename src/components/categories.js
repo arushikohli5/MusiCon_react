@@ -73,6 +73,8 @@ class CategoryComp extends React.Component {
         })
   
     var settings = {
+        autoplay: true,
+        autoplaySpeed: 2500,
         dots: true,
         infinite: true,
         speed: 150,

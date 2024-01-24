@@ -1,16 +1,17 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
-    overflow-x: hidden;
-    width: 100%;
+body {
+    overflow-x: hidden !important;
+    width: 100vw !important;
 }
+
 /*================================
            navbar styles
 ==================================*/
-.navbar{
+.navbar {
     /**top,left,bottom,right**/
     padding: 15px 0px;
     /* background-color: #000000; */
@@ -22,30 +23,41 @@ body{
     position: fixed !important;
     width: 100%;
 }
-.navbar-black{
+
+@media (max-width: 768px) {
+    .navbar {
+        width: 100vw;
+    }
+
+    .navbar-dark .navbar-toggler {
+        margin-right: 12px;
+    }
+}
+
+.navbar-black {
     background-color: #000000 !important;
 }
 
-.navbar .container{
+.navbar .container {
     display: inline !important;
-    
+
 }
 
-.navbar .navbar-header img{
+.navbar .navbar-header img {
     float: left;
     vertical-align: middle;
     margin-top: 15px;
 }
 
-.navbar .navi{
+.navbar .navi {
     padding-left: 15px;
 }
 
-.navbar ul{
+.navbar ul {
     margin-right: -50px;
 }
 
-.navbar ul li a{
+.navbar ul li a {
     font-family: Montserrat;
     color: white !important;
     text-transform: uppercase;
@@ -63,14 +75,15 @@ body{
     z-index: 9999;
 }
 
-.navbar ul li a .login{
+.navbar ul li a .login {
     color: #381DDB !important;
 }
-.navbar ul li a:hover{
+
+.navbar ul li a:hover {
     color: #FFA3A3 !important;
 }
 
-.navbar-toggler{
+.navbar-toggler {
     border: 1px solid white !important;
     border: white;
     transition: all 0.5s ease-in;
@@ -78,58 +91,93 @@ body{
     margin-right: -40px;
 }
 
-.navbar-header{
+.navbar-header {
     align-self: start;
     align-content: flex-start;
 }
 
-.navbar-brand{
+.navbar-brand {
     position: absolute;
-     
+
     left: 5%;
     top: 8%;
     padding: 0px;
 }
 
-.navbar-inverse .navbar-toggle{
+.navbar-inverse .navbar-toggle {
     background-color: transparent;
 }
 
-.navbar-inverse .navbar-collapse{
+.navbar-inverse .navbar-collapse {
     border: none;
 }
 
-.navbar-toggle:hover{
+.navbar-toggle:hover {
     background-color: #FFA3A3 !important;
 }
 
+/* .navbar-collapse{
+    background-color: #000000;
+}
+.navbar-collapse li{  
+    margin-bottom: 30px;
+} */
 
-.login{
+.login {
     border: 1px solid white;
     background-color: white;
-    color: #381DDB !important;    
+    color: #381DDB !important;
     align-content: center;
     align-self: center;
     align-items: center;
-    vertical-align: center;
+    vertical-align: middle;
     padding: 10px 20px;
     position: static;
     width: 90px;
     height: 20px;
     left: 40px;
     border-radius: 8px;
-    padding-bottom: 10px;
     transition: all 0.5s ease-in;
 }
 
-.login:hover{
+.login:hover {
     color: #FFA3A3;
+}
+
+.hr_line {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .hr_line {
+        margin: 5px !important;
+        display: inline;
+        color: white;
+    }
+
+    .navbar,
+    .navbar ul {
+        background-color: #000000 !important;
+    }
+
+    .login {
+        padding: 0px 20px !important;
+    }
+
+    .navbar ul {
+        margin-right: 0px !important;
+        padding-bottom: 4%;
+    }
+
+    .navbar ul:first-of-type {
+        padding-top: 21px;
+    }
 }
 
 /*======================
     coloured navbar
 ========================*/
-.secondary{
+.secondary {
     background-color: black !important;
 }
 
@@ -137,7 +185,7 @@ body{
 /*======================
     content styles
 ========================*/
-.slider{
+.slider {
     width: 100%;
     height: 700px;
     background-image: url(../components/imges/backgroung.png);
@@ -146,67 +194,70 @@ body{
     color: white;
 }
 
-.slider-ovrlay{
+.slider-ovrlay {
     width: 100%;
     height: 100%;
     position: relative;
 }
 
-.slider-content{
+.slider-content {
     position: absolute;
-    margin-top: 18%;
+    margin-top: 38%;
     width: 100%;
 }
 
-.text .t1{
+.text .t1 {
     font-family: Montserrat;
     font-size: 50px;
     font-weight: 700;
     text-shadow: 2px 2px 4px #000000;
 }
 
-.text .t2{
+.text .t2 {
     font-family: Montserrat;
     font-size: 50px;
-    font-weight: 700; 
+    font-weight: 700;
     color: #FFA3A3 !important;
     text-shadow: 2px 2px 4px #000000;
 }
 
-.text p{
+.text p {
     font-family: Montserrat;
     font-size: 20px;
-    font-weight: 500; 
+    font-weight: 500;
 }
 
 
-.signup{
+.signup {
     background-color: #FC5252 !important;
     height: 40px;
     width: 100px;
-    border-radius: 8px  !important;
+    border-radius: 8px !important;
     margin-right: 5px;
 }
 
-.signup a{
+.signup a {
     text-decoration: none;
-    color: white!important;
+    color: white !important;
 }
-.cta-div .btn1{
+
+.cta-div .btn1 {
     color: white;
     font-weight: bold;
 }
 
-.cta-div .fa-solid{
+.cta-div .fa-solid {
     font-size: 25px;
     vertical-align: middle;
     padding-left: 8px;
 }
-.cta-div .btn2:hover{
+
+.cta-div .btn2:hover {
     color: #FFA3A3 !important;
     text-decoration: none;
 }
-.btn2{
+
+.btn2 {
     color: white;
     font-weight: bolder;
     text-decoration: none;
@@ -214,7 +265,7 @@ body{
     margin-left: 5px;
 }
 
-.fa-play-circle-o{
+.fa-play-circle-o {
     vertical-align: bottom;
     font-weight: 1000;
     margin-left: 12px;
@@ -224,70 +275,76 @@ body{
 /*======================
     categories styles
 ========================*/
-.categories{
+.categories {
     margin-top: 10px;
     display: block;
     justify-content: center;
     flex-direction: row;
     align-items: center;
     margin-left: 0px;
-    
+
 }
 
-.categories .container{
+.categories .container {
     margin-left: 0px;
     display: block;
 }
 
-.categories .confetti1{
+.categories .confetti1 {
     z-index: 10;
     position: relative;
 }
 
-.categories .confetti1 img{
-    height: auto!important;
-    max-width: 30%!important;
-    margin-left: -50%;
+.categories .confetti1 img {
+    height: auto !important;
+    max-width: 30% !important;
     margin-top: 2%;
     position: relative;
     margin-bottom: -45px;
 }
 
-.categories .confetti2 img{
-    height: auto!important;
-    max-width: 30%!important;
+.categories .confetti2 img {
+    height: auto !important;
+    max-width: 30% !important;
     margin-left: 20%;
     margin-top: -2%;
     position: relative;
 }
-.categories ul.slick-slider{
+
+.categories ul.slick-slider {
     display: inline;
     display: flex;
     list-style-type: none;
 }
 
-.item-a .box{
+/* .slider-categories{
+    z-index: 10;
+} */
+
+.item-a .box {
     background-color: rgba(219, 132, 29, 0.1);
 }
 
-.item-b .box{
+.item-b .box {
     background-color: rgba(252, 82, 82, 0.1);
 }
 
-.item-c .box{
-    background-color: rgba(192, 0, 150, 0.1);
-}
-.item-d .box{
+.item-c .box {
     background-color: rgba(192, 0, 150, 0.1);
 }
 
-.item-e .box{
+.item-d .box {
+    background-color: rgba(192, 0, 150, 0.1);
+}
+
+.item-e .box {
     background-color: rgba(132, 196, 255, 0.1);
 }
-.box{
+
+.box {
     width: 220px;
     height: 230px;
-    top: 50%;   
+    top: 50%;
     border-radius: 24px;
     box-shadow: 2px 10px 12px rgba(0, 0, 0, 0.5);
     display: flex;
@@ -295,33 +352,38 @@ body{
     justify-content: space-between;
     box-sizing: border-box;
     margin: 20px 10px;
-    margin-left: 25px;
+    margin-left: 5px;
 }
 
-.box img{
+.box img {
     margin-top: -25px;
+    margin-left: 20px;
 }
-.music{
+
+.music {
     vertical-align: baseline;
     margin: 0px 20px;
     margin-top: 50px;
 }
-.details{
+
+.details {
     margin: 0px 20px;
 }
-.details p .details-text{
+
+.details p .details-text {
     color: black;
     font-family: Raleway;
     font-size: 12px;
 }
-.details p .heading{
-    font-family:'Montserrat Bold', arial;
+
+.details p .heading {
+    font-family: 'Montserrat Bold', arial;
     font-weight: 800;
     font-size: 22px;
     margin-top: -50px;
 }
 
-.categories-text{
+.categories-text {
     font-family: 'Montserrat Bold', arial;
     margin-left: 30px;
     margin-top: 80px;
@@ -329,15 +391,16 @@ body{
     font-size: 30px;
     color: black;
     text-align: center;
+    margin-bottom: -40px;
 }
 
 
-.box:hover{
+.box:hover {
     cursor: pointer;
 }
 
 
-.secon{
+.secon {
     background-color: blue !important;
     color: white;
 }
@@ -347,7 +410,7 @@ body{
 /*===================
          common
  ===================*/
-.section-heading{
+.section-heading {
     font-family: 'Montserrat Bold', arial;
     font-size: 27px;
     color: black;
@@ -355,49 +418,54 @@ body{
     padding-bottom: 15px;
 }
 
-.blue{
+.blue {
     color: #381DDB;
 }
 
 /*======================
     about us styles
 ========================*/
-.about-us{
+.about-us {
     margin-top: 100px;
 }
 
-.about-us .row{
+.about-us .row {
     vertical-align: text-bottom;
 }
 
-@media (min-width: 768px){
-    .about-us-image img{
+@media (min-width: 768px) {
+    .about-us-image img {
         height: auto;
         max-width: 65%;
         float: right;
     }
 }
 
-@media (max-width: 768px){
-    .about-us-image img{
+@media (max-width: 768px) {
+    .about-us-image img {
         height: auto;
         max-width: 65%;
         margin-left: 35px;
         margin-bottom: 15px;
     }
-} 
 
-@media (max-width: 768px){
-    div .about-us-text{
+    .slick-arrow {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    div .about-us-text {
         margin-left: 25px;
     }
-    div .aboutus-button{
+
+    div .aboutus-button {
         margin-left: 25px;
     }
 }
 
 
-div .about-us-text{
+div .about-us-text {
     margin-top: 30px;
     vertical-align: middle;
     font-family: 'Montserrat';
@@ -407,7 +475,7 @@ div .about-us-text{
 }
 
 
-.about-us .btn{
+.about-us .btn {
     margin-top: 30px;
     background-color: rgba(56, 29, 219, 1);
     color: white;
@@ -415,13 +483,13 @@ div .about-us-text{
     font-size: 20px;
 }
 
-.about-us .btn:hover{
+.about-us .btn:hover {
     color: white;
     background-color: black;
 }
 
 
-.confetti3{
+.confetti3 {
     margin-left: 10%;
     margin-top: -20px;
 }
@@ -430,13 +498,13 @@ div .about-us-text{
 /*======================
     organisers styles
 ========================*/
-.organisers{
+.organisers {
     margin-top: 10px;
 }
 
 
-@media (min-width: 768px){
-    .organisers-text{
+@media (min-width: 768px) {
+    .organisers-text {
         margin-top: 75px;
         font-family: Montserrat;
         float: right;
@@ -444,8 +512,8 @@ div .about-us-text{
     }
 }
 
-@media (max-width: 768px){
-    .organisers-text{
+@media (max-width: 768px) {
+    .organisers-text {
         margin-top: 75px;
         font-family: Montserrat;
         float: right;
@@ -453,13 +521,13 @@ div .about-us-text{
     }
 }
 
-.organisers-image img{
+.organisers-image img {
     height: auto;
     max-width: 95%;
 }
 
 
-.organisers-button .btn{
+.organisers-button .btn {
     margin-top: 30px;
     background-color: rgba(56, 29, 219, 1);
     color: white;
@@ -467,12 +535,12 @@ div .about-us-text{
     font-size: 20px;
 }
 
-.organisers-button .btn:hover{
+.organisers-button .btn:hover {
     color: white;
     background-color: black;
 }
 
-.confetti4 img{
+.confetti4 img {
     float: right;
     margin-top: -50px;
     margin-left: -2px;
@@ -482,42 +550,48 @@ div .about-us-text{
 /*================
     contact us
 ================*/
-.cont1{
+.cont1 {
     background-color: #381DDB;
     color: white;
     font-family: Montserrat;
     text-align: left;
-    
+
 }
-.contact-us .row{
+
+.contact-us .row {
     margin-right: -15px;
     margin-left: -15px;
     margin-top: 22px;
 }
 
-.cont1 .contact-details .text{
+.cont1 .contact-details .text {
     padding-left: 12px;
 }
-.text-heading{
+
+.text-heading {
     font-size: 25px;
     font-weight: 900;
-    padding-top: 100px;
+    padding-top: 35px;
     padding-bottom: 15px;
     padding-left: 75px;
 }
-.line{
+
+.line {
     padding-bottom: 40px;
     padding-left: 75px;
 }
 
-.contact-details{
+.contact-details {
     padding-left: 75px;
+    overflow-wrap: break-word;
 }
-.contact-details .fa-phone, .contact-details .fa-envelope{
+
+.contact-details .fa-phone,
+.contact-details .fa-envelope {
     padding-bottom: 30px;
 }
 
-.contact-us-image{
+.contact-us-image {
     float: right;
     margin-bottom: 0px;
     margin-right: -15px;
@@ -526,47 +600,50 @@ div .about-us-text{
 
 
 /*==form styling==*/
-.cont2{
+.cont2 {
     background-color: #E5E5E5;
-} 
+}
 
 
-.cont2-heading p{
-    font-family: 'Montserrat Bold', arial;
+.cont2-heading p {
+    font-family: 'Montserrat', arial;
     font-size: 22px;
     color: #000000;
     font-weight: 900;
-    padding-top: 90px;
-    margin-bottom: 20px;
+    padding-top: 35px;
+    margin-bottom: 0px;
+    margin-left: 25px;
 }
 
-.cont2 button{
+.cont2 button {
     position: relative;
     background-color: #381DDB;
     color: white;
     margin-top: 20px;
-    margin-bottom:33.5px ;
+    margin-bottom: 33.5px;
     align-items: center !important;
-    align-self: center!important;
+    align-self: center !important;
     align-content: center;
     width: 60%;
 }
 
-.form button:hover{
+.form button:hover {
     color: white;
     background-color: black;
 }
 
 
 .cont2 input,
-label,.cont2 .form_input {
+label,
+.cont2 .form_input {
     position: relative;
     display: inline-block;
     width: 100%;
     font-family: Raleway !important;
 }
 
-.cont2 input,.cont2 .form_input{
+.cont2 input,
+.cont2 .form_input {
     font-size: 1.25em;
     padding: 5px 5px 5px 5px;
     z-index: 10;
@@ -581,7 +658,7 @@ label,.cont2 .form_input {
     display: inline-block;
     margin: 0 auto;
     padding: 0 0 5px 0;
-    transition: all 0.5s ease-in-out; 
+    transition: all 0.5s ease-in-out;
     z-index: 1;
     top: 36px;
     text-align: left;
@@ -589,39 +666,61 @@ label,.cont2 .form_input {
 }
 
 .cont2 .filled label {
-	top: 10px;
-	font-size: 1.1em;
+    top: 7px;
+    font-size: 1.1em;
     bottom: 5px;
-} 
+}
 
+.end-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+
+    .cont2 input,
+    .cont2 .form_input {
+        width: 85vw;
+    }
+
+    .cont2 label {
+        width: 80vw;
+    }
+
+    .contact-us-image {
+        margin-right: 0px;
+    }
+}
 
 /* ===============
     footer
-================*/ 
+================*/
 
-.footer{
+.footer {
     background-color: #000000;
 }
 
-.btn-social-icon{
+.btn-social-icon {
     margin-top: 25px;
     padding: 5px;
     color: white !important;
 }
 
-.btn-social-icon i:hover{
+.btn-social-icon i:hover {
     color: #FFA3A3;
 }
 
-.btn-social-icon:hover{
+.btn-social-icon:hover {
     color: #FFA3A3;
 }
-.footer-txt ul{
+
+.footer-txt ul {
     position: relative;
     padding-top: 5px;
 }
 
-.footer-txt ul>li{
+.footer-txt ul>li {
     position: relative;
     display: inline;
     align-content: center;
@@ -631,14 +730,20 @@ label,.cont2 .form_input {
     margin-top: 10px;
 }
 
-.footer-txt ul li a{
+@media(max-width: 768px) {
+    .footer-txt ul>li {
+        padding: 5px;
+    }
+}
+
+.footer-txt ul li a {
     font-family: Montserrat;
-    color:  #D2D2D2 !important;
+    color: #D2D2D2 !important;
     text-decoration: none;
 }
 
 
-.footer-mark{
+.footer-mark {
     font-size: 13px;
     align-self: center;
     align-content: center;
@@ -653,45 +758,53 @@ label,.cont2 .form_input {
 /*================================
     detail-contact-us styles
 ==================================*/
-
-.detail-contact-us{
-    background-image: url(../components/imges/contact_us_bg.png);
+.detail_contact {
+    background-image: linear-gradient(rgba(56, 29, 219, 0), rgba(56, 29, 219, 0.2));
     background-size: cover;
-    display:flex;
+    background-size: cover;
+}
+
+.detail-contact-us {
+    /* background-image: url(../components/imges/detail_about_us.png); */
+
+
+    display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;/*
+    height: 100vh;
+    /*
     background: linear-gradient(359.72deg, #1D3CDB -23.13%, rgba(74, 153, 211, 0) 99.79%), #FFFFFF;
     opacity: 0.2; */
 }
 
-@media (min-width: 768px){
-    .contact-us-box{
+@media (min-width: 768px) {
+    .contact-us-box {
         width: 50%;
         min-height: 400px;
     }
 }
 
-@media (max-width: 768px){
-    .contact-us-box{
-        width: 80%;
+@media (max-width: 768px) {
+    .contact-us-box {
+        width: 90%;
         min-height: 400px;
-        margin-top: 220px !important;
+        margin-top: 380px !important;
         position: relative !important;
     }
 
-    .detail-contact-us-footer{
+    .detail-contact-us-footer {
         position: relative;
-        margin-top: 150px;
+        margin-top: 260px;
     }
+
 }
 
-.contact-us-box{
+.contact-us-box {
     position: absolute;
     align-self: center;
-    align-content:center;
+    align-content: center;
     border-radius: 24px;
-    background-color:#FFFFFF;
+    background-color: #FFFFFF;
     box-shadow: 2px 10px 12px rgba(0, 0, 0, 0.5);
     justify-content: space-between;
     box-sizing: border-box;
@@ -701,14 +814,14 @@ label,.cont2 .form_input {
 }
 
 
-.confetti6 img{
+.confetti6 img {
     max-width: 70% !important;
     z-index: 9;
     margin-left: 172%;
     margin-top: -206%;
 }
 
-.detail-contact-heading{
+.detail-contact-heading {
     margin-top: 10px;
     font-size: 21px;
     padding-bottom: 2px;
@@ -718,7 +831,7 @@ label,.cont2 .form_input {
     text-decoration: underline;
 }
 
-.detail-cont1-heading{
+.detail-cont1-heading {
     font-family: Raleway;
     font-weight: 800;
     font-size: 18px;
@@ -727,111 +840,147 @@ label,.cont2 .form_input {
     padding-top: 20px;
 }
 
-.button-align{
+.button-align {
     position: relative;
     margin: auto;
 }
 
-.detail-cont-btn{
+.detail-cont-btn {
     width: 80%;
     margin: auto;
     background-color: #381DDB !important;
-    color: white!important;
+    color: white !important;
 }
 
-.detail-cont-1{
+.detail-cont-1 {
     margin-left: 32px;
     padding-top: 5px;
 }
 
-.detail-cont-1 input{
+.detail-cont-1 input {
     border: none;
     border-bottom: 2px solid #3333;
 }
 
-@media (min-width: 1212px){
-    .detail-cont-1 input{
-        width: 250px;
-    }
-    .detail-cont-1 textarea{
+@media (min-width: 1212px) {
+    .detail-cont-1 input {
         width: 250px;
     }
 
-    
+    .detail-cont-1 textarea {
+        width: 250px;
+    }
+
+
 }
-.detail-cont-1 textarea{
+
+.detail-cont-1 textarea {
     border: none;
     border-bottom: 2px solid #3333;
 }
 
-.button-align button{
+.button-align button {
     margin-top: 25px !important;
     margin-left: auto;
 }
 
-.button-align .btn:hover{
+.button-align .btn:hover {
     background-color: #000000 !important;
     color: white !important;
 }
 
-.detail-contact-us-box2{
-    margin-top: 20px!important;
+.detail-contact-us-box2 {
+    margin-top: 55px !important;
     font-family: Raleway;
     padding-left: 10px;
+    font-size: 12px;
 }
 
-.detail-contact-us-box2 i{
+.detail-contact-us-box2 i .fa .fa-map-marker-alt {
     position: relative;
-    margin-top: 18px !important;
-    padding: 5px;
+    margin-top: 18px;
+    padding-right: 10px;
 }
 
-.detail-contact-us-box2 .fa-envelope {
-    margin-top: -15px !important;
+.detail-contact-us-box2 .temp {
+    margin-bottom: 10px;
 }
 
-.detail-cont-us i{
+.detail-contact-us-box2 .templast {
+    margin-bottom: -10px;
+}
+
+.detail-cont-us i {
     padding-right: 15px;
-    margin-top: 0px !important;
+    margin-top: 10px !important;
 }
 
-@media (max-width: 733px){
-    .detail-contact-us-box2{
+@media (max-width: 733px) {
+    .detail-contact-us-box2 {
         padding-left: 35px !important;
     }
+}
+
+.detail-contact-us-box2 .map {
+    max-width: 80%;
+    padding-bottom: 20px;
+    padding-top: 16px;
 }
 
 
 
 
 #flip {
-  height:50px;
-  overflow:hidden;
+    height: 65px;
+    overflow: hidden;
 }
 
-#flip > div > div {
-    padding:4px 12px;
-    height:45px;
-    margin-bottom:45px;
-    display:inline-block;
+#flip>div>div {
+    padding: 4px 12px;
+    height: 45px;
+    margin-bottom: 45px;
+    display: inline-block;
     font-family: Montserrat;
     font-size: 50px;
-    font-weight: 700; 
+    font-weight: 700;
     color: #FFA3A3 !important;
     text-shadow: 2px 2px 4px #000000;
 }
 
 #flip div:first-child {
-  animation: show 5s linear infinite;
+    animation: show 5s linear infinite;
 }
 
 @keyframes show {
-  0% {margin-top:-270px;}
-  5% {margin-top:-180px;}
-  33% {margin-top:-180px;}
-  38% {margin-top:-90px;}
-  66% {margin-top:-90px;}
-  71% {margin-top:0px;}
-  99.99% {margin-top:0px;}
-  100% {margin-top:-270px;}
+    0% {
+        margin-top: -270px;
+    }
+
+    5% {
+        margin-top: -180px;
+    }
+
+    33% {
+        margin-top: -180px;
+    }
+
+    38% {
+        margin-top: -90px;
+    }
+
+    66% {
+        margin-top: -90px;
+    }
+
+    71% {
+        margin-top: 0px;
+    }
+
+    99.99% {
+        margin-top: 0px;
+    }
+
+    100% {
+        margin-top: -270px;
+    }
 }

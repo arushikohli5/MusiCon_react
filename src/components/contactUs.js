@@ -63,7 +63,7 @@ class ContactUsComp extends React.Component{
                         </div>
                     </div>
                     <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 cont2">
-                        <div className="cont2-heading"><p>Fill In your details</p></div>
+                        <div className="cont2-heading"><p>Fill In Your Details</p></div>
                         <div className="cont2 form form-group-row">
                             <form>
                                 <div className="field col-xs-11 col-sm-11 col-md-11 col-lg-11">
@@ -82,7 +82,9 @@ class ContactUsComp extends React.Component{
                                     <label for="message">Message </label>
                                     <textarea className="form_input" id="message" name="message" rows="2"></textarea>
                                 </div>
-                                <button className="btn">Submit</button>
+                                <div class="end-btn">
+                                  <button className="btn">Submit</button>
+                                </div>
                             </form>
                         </div>
                     </div>

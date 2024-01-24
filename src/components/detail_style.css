@@ -1,9 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     overflow-x: hidden;
     width: 100%;
 }
@@ -11,14 +11,14 @@ body{
 /*================================
            Sign_up styles
 ==================================*/
-.sign_up{
+.sign_up {
     background-image: url(../components/imges/sign_up_background.png);
     background-size: cover;
     background-position: center;
     height: 100vh;
 }
 
-.contact-us-box2{
+.contact-us-box2 {
     position: absolute;
     width: 35%;
     height: 75vh;
@@ -31,14 +31,15 @@ body{
     align-content: center;
 }
 
-.sign_up_heading{
+.sign_up_heading {
     font-weight: 700;
     font-size: 40px;
     position: relative;
     margin-top: 10vh;
 }
 
-.organiser-button .btn, .band-button .btn{
+.organiser-button .btn,
+.band-button .btn {
     background-color: rgba(56, 29, 219, 1);
     color: white;
     font-family: Montserrat;
@@ -48,11 +49,11 @@ body{
     line-height: 18px;
 }
 
-.organiser-button .btn{
+.organiser-button .btn {
     margin-top: 10vh;
 }
 
-.sign_up .or{
+.sign_up .or {
     color: rgba(0, 0, 0, 0.39);
     font-weight: 500;
     font-size: 25px;
@@ -61,41 +62,42 @@ body{
     font-family: "Raleway";
 }
 
-.sign_up .last{
-    color:rgba(0, 0, 0, 0.3);
+.sign_up .last {
+    color: rgba(0, 0, 0, 0.3);
     margin-top: 15px;
 }
 
-.sign_up .link a{
+.sign_up .link a {
     color: rgba(56, 29, 219, 0.6);
-    text-decoration: none !important; 
+    text-decoration: none !important;
 }
 
 /*================================
            Sign_in styles
 ==================================*/
 
-.sign_in{
+.sign_in {
     background-image: url(../components/imges/sign_in_bg.png);
     background-size: cover;
     background-position: center;
     height: 100vh;
 }
 
-@media (min-width: 768px){
-    .sign_in_box{
+@media (min-width: 768px) {
+    .sign_in_box {
         width: 50%;
         border-bottom-left-radius: 30px;
         border-top-left-radius: 30px;
     }
 }
 
-@media (max-width: 768px){
-    .sign_in_box{
+@media (max-width: 768px) {
+    .sign_in_box {
         width: 100%;
     }
 }
-.sign_in_box{
+
+.sign_in_box {
     background-color: white;
     /* border-bottom-left-radius: 30px;
     border-top-left-radius: 30px; */
@@ -104,27 +106,27 @@ body{
     float: right;
 }
 
-.sign_in .heading{
-    margin-top: 15vh;
+.sign_in .heading {
+    margin-top: 8vh;
     font-family: 'Montserrat Bold', arial;
     font-size: 30px;
     font-weight: 700;
     padding-bottom: 25px;
 }
 
-.sign_in .btn .btn-text{
+.sign_in .btn .btn-text {
     font-size: 12px;
     font-family: "Raleway";
     color: rgba(0, 0, 0, 0.6);
 }
 
-.sign_in .button1{
+.sign_in .button1 {
     margin-left: 11px;
     border-color: rgba(0, 0, 0, 0.2);
     display: inline-flex;
 }
 
-.sign_in .button2{
+.sign_in .button2 {
     border-color: rgba(0, 0, 0, 0.2);
     display: inline-flex;
     margin-left: 70px;
@@ -137,18 +139,18 @@ body{
     color: transparent;
     -webkit-text-fill-color: transparent;
     padding-right: 5px;
-  }
+}
 
-.sign_in .fa-facebook-f{
+.sign_in .fa-facebook-f {
     color: #3b5998;
-    background-image: linear-gradient( to bottom, transparent 20%, white 20%, white 93%, transparent 93% );
+    background-image: linear-gradient(to bottom, transparent 20%, white 20%, white 93%, transparent 93%);
     background-size: 55%;
     background-position: 70% 0;
     background-repeat: no-repeat;
     padding-right: 5px;
-  }
+}
 
-.sign_in .or{
+.sign_in .or {
     color: rgba(0, 0, 0, 0.39);
     font-weight: 500;
     font-size: 20px;
@@ -157,7 +159,7 @@ body{
     font-family: "Raleway";
 }
 
-.sign_in .field input{
+.sign_in .field input {
     width: 70%;
     border: none;
     border-bottom: 1px solid #3333;
@@ -165,16 +167,16 @@ body{
     margin-top: 35px;
 }
 
-.sign_in .field input::placeholder{
+.sign_in .field input::placeholder {
     color: rgba(0, 0, 0, 0.3);
     font-family: "Raleway";
 }
 
-.sign_in .field input :focus-visible{
+.sign_in .field input :focus-visible {
     border: none;
 }
 
-.sign_in .sign-in-btn{
+.sign_in .sign-in-btn {
     background-color: rgba(56, 29, 219, 1);
     color: white;
     font-family: Montserrat;
@@ -185,19 +187,227 @@ body{
     margin-top: 7vh;
 }
 
+.sign_in .confetti1 {
+    position: relative;
+    margin-left: -30vw;
+    margin-top: -5vh;
+}
+
 /*================================
         about-us styles
 ==================================*/
-.about-us1{
-    background-image: url(../components/imges/about-us-bg1.png);
+.about-us1 {
+    /* background-image: url(../components/imges/about-us-bg1.png); */
+    background-image: linear-gradient(rgba(56, 29, 219, 0.2), rgba(56, 29, 219, 0));
+    background-size: cover;
+    background-position: center;
+    height: 118vh;
+    width: 100%;
+}
+
+.overflow {
+    overflow-x: hidden;
+}
+
+@media (min-width: 768px) {
+    .box-about-us {
+        vertical-align: middle;
+        float: right;
+        margin-right: -125px;
+        margin-top: -5vh;
+    }
+
+    .detail-about-us-image img {
+        vertical-align: middle;
+        float: right;
+        padding-right: 50px;
+        padding-top: 20vh;
+        max-width: 62vw;
+        max-height: 94vh;
+        z-index: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-toggler {
+        margin-right: 5px !important;
+    }
+
+    .detail-about-us-image img {
+        padding-left: 10%;
+        padding-top: 17vh;
+        max-width: 92%;
+    }
+
+    .box-about-us {
+        /* margin-left: 66% !important; */
+        width: 300px !important;
+        height: 230px !important;
+        margin-left: 10px;
+    }
+
+    .detail-about-us-txt {
+        margin-left: 25px;
+        width: 90vw;
+    }
+
+    .box4 {
+        left: 0% !important;
+        padding-top: 25px;
+        width: 80vw;
+    }
+
+    .our-services {
+        padding-left: 15px !important;
+        padding-right: 0px !important;
+        padding-top: 25vh !important;
+    }
+}
+
+.col-xs-12 .col-sm-12 .col-md-6 .col-lg-6 .detail-about-us-image {
+    padding: 0px !important;
+}
+
+/* .detail-about-us-image img{
+    vertical-align: middle;
+    float: right;
+    padding-left: 80px;
+    padding-top: 20vh;
+    max-width: 54vw;
+    max-height: 94vh;
+} */
+
+.detail-about-us-txt {
+    float: left;
+    vertical-align: middle;
+    padding-top: 20vh;
+
+}
+
+.detail-about-us-txt .description {
+    font-weight: 900;
+    font-family: 'Montserrat';
+    font-size: 20px;
+}
+
+.detail-about-us-txt .sub-heading1 {
+    font-weight: 900;
+    font-family: 'Montserrat Bold', arial;
+    font-size: 28px;
+}
+
+.description-text {
+    font-family: 'Montserrat';
+    font-size: 22px;
+    line-height: 35px;
+}
+
+
+@media (min-width: 1170px) {
+    .box-about-us {
+        top: -14%;
+        margin-left: 510px;
+        margin-top: 70px;
+        z-index: 1;
+    }
+}
+
+.box-about-us {
+    width: 350px;
+    height: 180px;
+    border-radius: 10px;
+    border: 3px solid white;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.box-text {
+    color: rgba(0, 0, 0, 0.6);
+    font-family: 'Raleway';
+    vertical-align: middle;
+    margin-top: 12px;
+    padding-left: 28px;
+    padding-top: 10px;
+
+}
+
+.box-text-description {
+    font-family: 'Raleway';
+    vertical-align: middle;
+    color: black;
+    text-align: justify;
+    font-size: 16px;
+    margin-top: -10px;
+    padding-left: 28px;
+    font-style: oblique;
+}
+
+.our-services {
+    padding-left: 15vw;
+    padding-right: 40vw;
+    padding-top: 10vh !important;
+}
+
+.box4 {
+    position: relative !important;
+    left: 50%;
+
+}
+
+.box4-1,
+.box4-2,
+.box4-3,
+.box4-4 {
+    width: 250px;
+    height: 193px;
+    background-image: linear-gradient(rgba(56, 29, 219, 1), rgba(56, 29, 219, 0));
+    border-radius: 10px;
+    border: 3px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: relative;
+    color: white;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    align-items: center;
+    vertical-align: middle;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.box4-1 span,
+.box4-2 span,
+.box4-3 span,
+.box4-4 span {
+    position: relative !important;
+    top: 40%;
+}
+
+
+
+/*================================
+        sign up band styles
+==================================*/
+.sign_up_band .sign_in {
+    background-image: url(../components/imges/sign_up_band_bg.png) !important;
     background-size: cover;
     background-position: center;
     height: 100vh;
 }
 
-.img1 img{
-    vertical-align: middle;
-    padding-left: 80px;
-    padding-top: 20vh;
-    max-width: 35vw;
+/*================================
+        sign up organiser styles
+==================================*/
+.sign_up_organiser .sign_in {
+    background-image: url(../components/imges/sign_up_club_bg.png) !important;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
 }
